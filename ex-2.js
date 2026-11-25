@@ -12,6 +12,6 @@ let studentScores = {
   tech: 100,
 };
 
-// Start coding here
-
+let newStudentProfile = {...studentProfile, 
+  scores : {...studentProfile.scores,...studentScores}};// copy new scores ทับอันเก่า => เพิ่ม scores ไปด้วย
 console.log(newStudentProfile);
